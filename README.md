@@ -1,13 +1,13 @@
 # Sym-NCO: Leveraging Symmetricity for Neural Combinatorial Optimization 
 
-Sym-NCO is deep reinforcement learning-based neural combinatorial optimization scheme by exploiting symmetric nature of combinatorial optimization. 
+Sym-NCO is deep reinforcement learning-based neural combinatorial optimization scheme that exploits the symmetric nature of combinatorial optimization. 
 
-Before reading our code, we strongly recommend to read code of [AM](https://github.com/wouterkool/attention-learn-to-route) and [POMO](https://github.com/yd-kwon/POMO/tree/master/NEW_py_ver) which is base of our code. 
+Before reading our code, we strongly recommend reading the code of [AM](https://github.com/wouterkool/attention-learn-to-route) and [POMO](https://github.com/yd-kwon/POMO/tree/master/NEW_py_ver) which is base of our code. 
 
 
 ## Sym-NCO-POMO
 
-Sym-NCO is extended method of POMO. POMO will gives powerful performances in TSP. Sym-NCO can improves POMO at CVRP, slightly at TSP. 
+Sym-NCO is an extended method of POMO. POMO will give powerful performances in TSP. Sym-NCO can improve POMO at CVRP and slightly at TSP. 
 
 ### TSP
 
