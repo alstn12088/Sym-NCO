@@ -1,0 +1,15 @@
+[2022-12-16 03:06:15] train_baseline.py(149) : DEBUG_MODE: True
+[2022-12-16 03:06:15] train_baseline.py(150) : USE_CUDA: False, CUDA_DEVICE_NUM: 0
+[2022-12-16 03:06:15] train_baseline.py(151) : env_params{'problem_size': 100, 'pomo_size': 100, 'sr_size': 1}
+[2022-12-16 03:06:15] train_baseline.py(151) : env_test_params{'problem_size': 100, 'pomo_size': 100}
+[2022-12-16 03:06:15] train_baseline.py(151) : model_params{'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'encoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'logit_clipping': 10, 'ff_hidden_dim': 512, 'eval_type': 'argmax'}
+[2022-12-16 03:06:15] train_baseline.py(151) : optimizer_params{'optimizer': {'lr': 0.0001, 'weight_decay': 1e-06}, 'scheduler': {'milestones': [2001], 'gamma': 0.1}}
+[2022-12-16 03:06:15] train_baseline.py(151) : trainer_params{'use_cuda': False, 'cuda_device_num': 0, 'epochs': 2, 'train_episodes': 10, 'train_batch_size': 4, 'is_pomo': True, 'wandb': False, 'logging': {'model_save_interval': 10, 'img_save_interval': 10, 'log_image_params_1': {'json_foldername': 'log_image_style', 'filename': 'style_tsp_20.json'}, 'log_image_params_2': {'json_foldername': 'log_image_style', 'filename': 'style_loss_1.json'}}, 'model_load': {'enable': False}}
+[2022-12-16 03:06:15] train_baseline.py(151) : tester_params{'use_cuda': False, 'cuda_device_num': 0, 'test_episodes': 10, 'test_batch_size': 4, 'augmentation_enable': True, 'aug_factor': 2, 'aug_batch_size': 4}
+[2022-12-16 03:06:15] train_baseline.py(151) : logger_params{'log_file': {'desc': 'train__tsp_n20', 'filename': 'run_log', 'filepath': './result/20221216_030614_train__tsp_n20'}}
+[2022-12-16 03:06:15] TSPTrainer.py(75) : =================================================================
+[2022-12-16 03:06:17] TSPTrainer.py(157) : Epoch   1: Train   4/ 10(40.0%)  Score: 34.5445,  Loss: -28.2140
+[2022-12-16 03:06:19] TSPTrainer.py(157) : Epoch   1: Train   8/ 10(80.0%)  Score: 30.3608,  Loss: -39.1635
+[2022-12-16 03:06:20] TSPTrainer.py(157) : Epoch   1: Train  10/ 10(100.0%)  Score: 28.9546,  Loss: -40.2194
+[2022-12-16 03:06:20] TSPTrainer.py(162) : Epoch   1: Train (100%)  Score: 28.9546,  Loss: -40.2194
+[2022-12-16 03:06:20] TSPTrainer.py(89) : Epoch   1/  2: Time Est.: Elapsed[0.09m], Remain[0.09m]
