@@ -216,7 +216,7 @@ def _eval_dataset(model, dataset, width, softmax_temp, opts, device):
 if __name__ == "__main__":
     torch.manual_seed(1)
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dataset_path", type=str, default='data/pctsp/pctsp100_test_seed1234.pkl',
+    parser.add_argument("--dataset_path", type=str, default='data/pctsp100_test_seed1234.pkl',
                         help="Filename of the dataset(s) to evaluate")
     parser.add_argument("-f", action='store_true', help="Set true to overwrite")
     parser.add_argument("-o", default=None, help="Name of the results file to write")
