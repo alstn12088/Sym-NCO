@@ -140,8 +140,8 @@ python train.py --problem 'tsp' --N_aug 10
 
 ## Further Work
 
-Symmetric learning gives powerful benefit for combinatorial optimization. However, I think there is no remaining rooms at DRL. Instead, we think imitation learning with sparse data setting can be alterative benchmark for further work. 
-If you want to make further work of Sym-NCO, please check out [Sym-NCO-IL](https://github.com/alstn12088/Sym-NCO-IL). 
+Symmetric learning gives powerful benefits for combinatorial optimization. However, there are no remaining rooms at DRL. Instead, imitation learning with sparse data setting can be an alterative benchmark for further work. 
+If you want to do further work of Sym-NCO, please check out [Sym-NCO-IL](https://github.com/alstn12088/Sym-NCO-IL). 
 
 
 
