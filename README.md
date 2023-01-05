@@ -106,12 +106,12 @@ python eval.py --dataset_path [YOUR_DATASET] --model [YOUR_MODEL] --eval_batch_s
 
 **PCTSP reproduce**
 ```bash
-python eval.py --dataset_path 'pctsp100_test_seed1234.pkl' --model pretrained_model/pctsp_100/epoch-99.pt 
+python eval.py --dataset_path 'data/pctsp100_test_seed1234.pkl' --model pretrained_model/pctsp_100/epoch-99.pt 
 ```
 
 **OP reproduce**
 ```bash
-python eval.py --dataset_path 'op_dist100_test_seed1234.pkl' --model pretrained_model/op_100/epoch-99.pt 
+python eval.py --dataset_path 'data/op_dist100_test_seed1234.pkl' --model pretrained_model/op_100/epoch-99.pt 
 ```
 
 ### Train
