@@ -134,7 +134,7 @@ python train.py --problem 'tsp' --N_aug 10
 * SciPy
 * [PyTorch](http://pytorch.org/)>=1.7
 * tqdm
-* [tensorboard_logger](https://github.com/TeamHG-Memex/tensorboard_logger)
+* pytz
 * Matplotlib (optional, only for plotting)
 
 
