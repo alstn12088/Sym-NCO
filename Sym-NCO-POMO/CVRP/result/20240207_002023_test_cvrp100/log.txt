@@ -1,0 +1,10 @@
+[2024-02-07 00:20:24] test_symnco.py(103) : DEBUG_MODE: False
+[2024-02-07 00:20:24] test_symnco.py(104) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2024-02-07 00:20:24] test_symnco.py(105) : env_params{'problem_size': 100, 'pomo_size': 100}
+[2024-02-07 00:20:24] test_symnco.py(105) : model_params{'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'encoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'logit_clipping': 10, 'ff_hidden_dim': 512, 'eval_type': 'argmax'}
+[2024-02-07 00:20:24] test_symnco.py(105) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'model_load': {'path': 'pretrained_model/Sym-NCO/', 'epoch': 8000}, 'test_episodes': 100, 'test_batch_size': 1000, 'augmentation_enable': True, 'aug_factor': 2, 'aug_batch_size': 1000, 'test_data_load': {'enable': True, 'filename': 'data/vrp100_test_seed1234.pkl'}, 'is_pomo': False}
+[2024-02-07 00:20:24] test_symnco.py(105) : logger_params{'log_file': {'desc': 'test_cvrp100', 'filename': 'log.txt', 'filepath': './result/20240207_002023_test_cvrp100'}}
+[2024-02-07 00:20:28] CVRPTester.py(86) : episode 100/100, Elapsed[0.05m], Remain[0.00m], score:15.834, aug_score:15.775
+[2024-02-07 00:20:28] CVRPTester.py(92) :  *** Test Done *** 
+[2024-02-07 00:20:28] CVRPTester.py(93) :  Greedy: 16.0891 
+[2024-02-07 00:20:28] CVRPTester.py(94) :  Sampling: 15.7751 

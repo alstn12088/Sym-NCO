@@ -10,9 +10,6 @@ from torch.nn import CosineSimilarity
 from nets.attention_model import set_decode_type
 from utils.log_utils import log_values
 from utils import move_to
-# import wandb
-
-# wandb.init(project="model-agnostic", entity="alstn12088")
 
 
 def get_inner_model(model):
@@ -72,13 +69,12 @@ def clip_grad_norms(param_groups, max_norm=math.inf):
     return grad_norms, grad_norms_clipped
 
 
-def train_epoch(model, optimizer, baseline, lr_scheduler, epoch, val_dataset, problem, tb_logger, opts):
+def train_epoch(model, optimizer, baseline, lr_scheduler, epoch, val_dataset, problem, opts):
     print("Start train epoch {}, lr={} for run {}".format(epoch, optimizer.param_groups[0]['lr'], opts.run_name))
     step = epoch * (opts.epoch_size // opts.batch_size)
     start_time = time.time()
  
-    if not opts.no_tensorboard:
-        tb_logger.log_value('learnrate_pg0', optimizer.param_groups[0]['lr'], step)
+
 
     # Generate new training data for each epoch
     training_dataset = baseline.wrap_dataset(problem.make_dataset(
@@ -99,7 +95,6 @@ def train_epoch(model, optimizer, baseline, lr_scheduler, epoch, val_dataset, pr
             batch_id,
             step,
             batch,
-            tb_logger,
             opts,problem
         )
 
@@ -122,10 +117,9 @@ def train_epoch(model, optimizer, baseline, lr_scheduler, epoch, val_dataset, pr
         )
 
     avg_reward = validate(model, val_dataset, opts)
-    wandb.log({"avg_cost": avg_reward})
+
  
-    if not opts.no_tensorboard:
-        tb_logger.log_value('val_avg_reward', avg_reward, step)
+
 
     baseline.epoch_callback(model, epoch)
 
@@ -283,7 +277,6 @@ def train_batch(
         batch_id,
         step,
         batch,
-        tb_logger,
         opts,problem
 ):
     x, bl_val = baseline.unwrap_batch(batch)
