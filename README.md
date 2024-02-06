@@ -118,13 +118,13 @@ python eval.py --dataset_path 'data/op_dist100_test_seed1234.pkl' --model pretra
 
 **General**
 ```bash
-python train.py --problem [Target Problem ('tsp', 'cvrp', 'pctsp_det', 'op')] --N_aug [L: problem symmetric width]
+python run.py --problem [Target Problem ('tsp', 'cvrp', 'pctsp_det', 'op')] --N_aug [L: problem symmetric width]
 ```
 
 **Example**
 
 ```bash
-python train.py --problem 'tsp' --N_aug 10 
+python run.py --problem 'tsp' --N_aug 10 
 ```
 
 ## Dependencies (Same with AM)
