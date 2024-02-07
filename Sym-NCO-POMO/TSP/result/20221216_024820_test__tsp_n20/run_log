@@ -1,6 +1,0 @@
-[2022-12-16 02:48:21] test_baseline.py(103) : DEBUG_MODE: False
-[2022-12-16 02:48:21] test_baseline.py(104) : USE_CUDA: False, CUDA_DEVICE_NUM: 3
-[2022-12-16 02:48:21] test_baseline.py(105) : env_params{'problem_size': 100, 'pomo_size': 100}
-[2022-12-16 02:48:21] test_baseline.py(105) : model_params{'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'encoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'logit_clipping': 10, 'ff_hidden_dim': 512, 'eval_type': 'argmax'}
-[2022-12-16 02:48:21] test_baseline.py(105) : tester_params{'use_cuda': False, 'cuda_device_num': 3, 'model_load': {'path': 'pretrained_model/Sym-NCO/', 'epoch': 2010}, 'test_data_load': {'enable': True, 'filename': 'data/tsp100_test_seed1234.pkl'}, 'test_episodes': 1, 'test_batch_size': 1, 'augmentation_enable': True, 'aug_factor': 2, 'aug_batch_size': 1, 'is_pomo': False}
-[2022-12-16 02:48:21] test_baseline.py(105) : logger_params{'log_file': {'desc': 'test__tsp_n20', 'filename': 'run_log', 'filepath': './result/20221216_024820_test__tsp_n20'}}
