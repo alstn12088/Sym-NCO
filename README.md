@@ -1,5 +1,16 @@
 # Sym-NCO: Leveraging Symmetricity for Neural Combinatorial Optimization 
 
+> ## 🔔 Note (Updated Implementation)
+>
+> A more **extensive, actively maintained, and up-to-date implementation** of Neural Combinatorial Optimization (including Sym-NCO–related components and broader RL4CO methods) is now available in the following repository:
+>
+> 👉 https://github.com/ai4co/rl4co
+>
+> We recommend users check this repository for the latest features, improvements, and unified implementations of recent neural combinatorial optimization methods.
+>
+> This repository remains the **official code release for the NeurIPS 2022 Sym-NCO paper** and is preserved for reproducibility of the original experiments.
+
+
 Sym-NCO is deep reinforcement learning-based neural combinatorial optimization scheme that exploits the symmetric nature of combinatorial optimization. 
 
 Before reading our code, we strongly recommend reading the code of [AM](https://github.com/wouterkool/attention-learn-to-route) and [POMO](https://github.com/yd-kwon/POMO/tree/master/NEW_py_ver) which is base of our code. 
