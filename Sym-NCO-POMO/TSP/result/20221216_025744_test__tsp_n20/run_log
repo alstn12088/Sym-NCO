@@ -1,7 +1,0 @@
-[2022-12-16 02:57:45] test_baseline.py(103) : DEBUG_MODE: False
-[2022-12-16 02:57:45] test_baseline.py(104) : USE_CUDA: False, CUDA_DEVICE_NUM: 3
-[2022-12-16 02:57:45] test_baseline.py(105) : env_params{'problem_size': 100, 'pomo_size': 100}
-[2022-12-16 02:57:45] test_baseline.py(105) : model_params{'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'encoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'logit_clipping': 10, 'ff_hidden_dim': 512, 'eval_type': 'argmax'}
-[2022-12-16 02:57:45] test_baseline.py(105) : tester_params{'use_cuda': False, 'cuda_device_num': 3, 'model_load': {'path': 'pretrained_model/POMO_baseline/', 'epoch': 2010}, 'test_data_load': {'enable': True, 'filename': 'data/tsp100_test_seed1234.pkl'}, 'test_episodes': 10000, 'test_batch_size': 2000, 'augmentation_enable': True, 'aug_factor': 1, 'aug_batch_size': 2000, 'is_pomo': True}
-[2022-12-16 02:57:45] test_baseline.py(105) : logger_params{'log_file': {'desc': 'test__tsp_n20', 'filename': 'run_log', 'filepath': './result/20221216_025744_test__tsp_n20'}}
-[2022-12-16 02:58:50] TSPTester.py(89) : episode 2000/10000, Elapsed[1.08m], Remain[4.33m], score:7.797, aug_score:7.797
